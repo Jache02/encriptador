@@ -1,0 +1,88 @@
+body{
+   background: #b2e2f2; 
+   
+}
+header{
+    
+    height: 2em;
+    border: soid;
+    text-align: center ;
+    padding: 1em 2em 2em;
+    background: #fabfb7;
+}
+.title {
+    margin-top: 1px;
+    font-size: 3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 0 2px;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.encriptado, .decript{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 66vh;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black 
+}
+
+.labels {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0 15px 15px;
+    height: 10%;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.entradas {
+    display: block;
+    padding:5% 10% 10px;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 60%;
+}
+.encript-button, .result{
+    padding: 5px 10px;
+    background-color: #1e5db5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.encript-button:hover, .result:hover{
+    background: blue;
+}
+.encript-button {
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.encript-button:active, .result:active {
+    transform: scale(1.1);
+}
+@media screen and (max-width:480px) {
+    .contenedor {
+        justify-content: space-between;
+    }
+    .encriptado, .decript{
+        width: 46%;
+    }
+    .labels {
+        margin-bottom:25%;
+    }
+    .entradas{
+        height: 40%;
+    }
+}
